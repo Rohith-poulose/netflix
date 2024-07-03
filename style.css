@@ -104,6 +104,12 @@ select option {
     cursor: pointer;
     transition: all 0.2s;
 }
+#error{
+    color: red;
+    width: 45%;
+    display: flex;
+    margin: 0 auto;
+}
 
 .newsletter button i {
     margin-left: 15px;
@@ -112,7 +118,10 @@ select option {
 .newsletter button:hover {
     background: #b30303
 }
-
+.newsletter input:focus::placeholder{
+    transform: translateY(-10px);
+    font-size: small;
+}
 hr {
     width: 100%;
     height: 7px;
