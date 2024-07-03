@@ -6,10 +6,16 @@ btn.addEventListener('click',()=>{
     if(value==''){
         result.innerHTML='enter your email';
         input.style.border='1px solid red';
+        setTimeout(()=>{
+            result.innerHTML='';
+        },2000)
     }
     else if(!validateEmail(value)){
         result.innerHTML='enter a valid email';
         input.style.border='1px solid red';
+        setTimeout(()=>{
+            result.innerHTML='';
+        },2000)
     }
     else{
         result.innerHTML='';
