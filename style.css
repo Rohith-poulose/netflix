@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', 'sans';
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/header-image.png);
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 12%;
+}
+
+.logo img {
+    width: 150px;
+}
+
+select {
+    background: transparent;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: 'open sans';
+}
+
+select option {
+    color: #000;
+}
+
+.btns button {
+    background: #db0000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    font-weight: bolder;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin: 0px 15px;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 15%;
+}
+
+.herotitle {
+    font-size: 46px;
+    font-weight: bolder;
+}
+
+.heropara {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.herotext {
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.newsletter {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.newsletter input {
+    width: 65%;
+    padding: 20px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    border: 1px solid gray;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.newsletter button {
+    width: 35%;
+    background: #db0000;
+    color: #fff;
+    padding: 20px 15px;
+    border: none;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.newsletter button i {
+    margin-left: 15px;
+}
+
+.newsletter button:hover {
+    background: #b30303
+}
+
+hr {
+    width: 100%;
+    height: 7px;
+    background-color: #303030;
+    border: none;
+}
+
+section {
+    background-color: #000;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5% 12%;
+}
+
+.row h1 {
+    font-size: 46px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.row p {
+    font-size: 23px;
+
+}
+
+.row img {
+    width: 500px;
+}
+.col1{
+    width: 50%;
+}
+.col2{
+    width: 50%;
+}
+/* ----------------faq------------------- */
+.faq {
+    background-color: #000;
+    padding: 5%;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+
+.accordian {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordian li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordian li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    cursor: pointer;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.accordian .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-heigt 0.5s, padding 0.5s;
+}
+
+.herotext.faqtext {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    ;
+}
+
+.accordian input[type='radio']:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordian input[type='radio']:checked+label::after {
+    transform: rotate(45deg);
+}
+
+/* --------------footer--------------- */
+footer {
+    background-color: #000;
+    padding: 5% 13%;
+    color: #acacac;
+}
+
+footer>p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footerdiv {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+footer li a {
+    color: #acacac;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:768px) {
+    header {
+        height: 90vh;
+    }
+
+    nav {
+        padding: 3%;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .hero {
+        padding: 0 3%;
+    }
+
+    .herotitle {
+        font-size: 32px;
+    }
+
+    .heropara {
+        font-size: 16px;
+    }
+
+    .herotext {
+        font-size: 16px;
+    }
+
+    .newsletter {
+        width: 80%;
+    }
+
+    .newsletter input {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .newsletter button {
+        padding: 14px;
+    }
+
+    .row {
+        text-align: center;
+    }
+
+    .row h1 {
+        font-size: 32px;
+    }
+
+    .row p {
+        font-size: 16px;
+    }
+
+    .row img {
+        width: 100%
+    }
+    .col1{
+        width: 100%;
+    }
+    .col2{
+        width: 100%;
+    }
+    .row.rowcol {
+        flex-direction: column-reverse;
+    }
+    .faq h2{
+        font-size: 32px;
+    }
+    .accordian{
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .hero{
+        padding: 0 9%;
+    }
+    .newsletter {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+    }
+    .newsletter input{
+        width: 100%;
+        padding: 12px;
+    }
+    .newsletter button{
+        width: 50%;
+        padding: 12px;
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .newsletter button i{
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    footer{
+        padding: 1% 9%;
+    }
+    .footerdiv>div{
+        width: 50%;
+    }
+    .footerdiv a{
+        font-size: 13px;
+    }
+    .faq h2{
+        font-size: 28px;
+    }
+    .accordian{
+        margin: 15px auto;
+    }
+}
+@media only screen and (max-width:320px){   
+    .hero{
+        padding: 0 1%;
+    }
+    nav{
+        padding: 3% 1%;
+    }
+}
