@@ -118,6 +118,10 @@ select option {
 .newsletter button:hover {
     background: #b30303
 }
+.newsletter input::placeholder{
+    font-size: large;
+    transition: all 0.5s;
+}
 .newsletter input:focus::placeholder{
     transform: translateY(-10px);
     font-size: small;
