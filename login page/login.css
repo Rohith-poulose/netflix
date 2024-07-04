@@ -184,3 +184,13 @@ select option {
         width: 50%;
     }
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #000;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #db0000;
+    border-radius: 10px;
+}

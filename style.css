@@ -53,6 +53,7 @@ select option {
 }
 .btns button a{
     color: #fff;
+    text-decoration: none;
 }
 .hero {
     text-align: center;
@@ -388,4 +389,14 @@ footer li a {
     nav{
         padding: 3% 1%;
     }
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #000;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #db0000;
+    border-radius: 10px;
 }
